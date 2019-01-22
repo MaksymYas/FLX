@@ -1,0 +1,199 @@
+
+
+/*Task №1*/
+@media print {
+    .tm-sidebar, #about, .heading, .blocks, #ideas, .img-fluid, #contact {
+        display:none;
+    }
+    .tm-main-content{
+        margin: auto 0;
+    }
+
+    .tm-team-description-container > h2 {
+    color:blue !important;
+    }
+
+    .flex-2-col{
+        display:flex;
+        flex-direction: row;
+    }
+    .tm-team-description-container{
+        max-width: 400px;
+    }
+
+
+    .tm-content-box.flex-2-col img {
+    width: 200px;
+    margin: 70px 50px 50px 50px;
+    }
+
+    .pad{
+        padding:10px;
+    }
+    .tm-banner{
+        height: 300px;
+    }
+    .tm-content-box{
+        margin-bottom:10px
+    }
+  }
+
+@media screen {
+    /*Task №2*/
+	#about .box {
+		border-top: 0 !important;
+		border-left: 0 !important;
+    }
+
+    section #about .box:nth-child(-n+3) {
+		border-top: 1px solid silver !important;
+	}
+
+	section #about .box:nth-child(3n+1) {
+    border-left: 1px solid silver !important;
+    }
+
+    section #about .box:nth-child(3) {
+      background-color: #87CEFA;
+    }
+
+    section #about .box:nth-child(3) h2 {
+      color: white;
+      font-size: 30px;
+      }
+    /*Task №3*/
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+
+    /*Task №4*/
+    .tm-sidebar,.tm-content-box{
+        box-shadow:5px 5px 20px 2px grey;
+    }
+
+    /*Task №5*/
+
+    .gallery-container a img{
+        border: 2px solid silver;
+    }
+
+    /*Task №6*/
+
+    .carousel-inner h2:first-of-type{
+        color:gainsboro;
+        letter-spacing: 5px;
+    }
+
+    /*Task №7*/
+    h2 + p{
+        font-style: italic;
+    }
+
+    /*task №8*/
+
+    p:not([class="tm-banner-text"]) {
+        text-indent: 20px;
+        line-height: 35px;
+       }
+
+
+    /*task №9*/
+    .heading h2{
+        color: rgb(50, 139, 241);
+        text-align: center;
+    }
+    .heading a{
+        color:black;
+    }
+
+    .heading a:visited {
+        color: silver;
+    }
+
+    .heading a:hover {
+        color: rgb(103, 156, 216);
+    }
+
+    .text::after{
+        content: "New";
+        color:red;
+        font-size: 50%;
+        vertical-align: top;
+    }
+    /*task №10*/
+    .blocks .box-bg{
+        background-color: rgb(240, 240, 240);
+    }
+
+    .blocks .box p:first-letter {
+        color: #6b6b6b;
+        font-size: 30px;
+    }
+
+    .blocks p{
+        text-indent: 0px;
+        line-height: 30px;
+    }
+
+    .box-work img {
+      width: 94%;
+      margin: 1%;
+
+    }
+    .gallery-container {
+      margin-left: 1%;
+      margin-top: 1%;
+    }
+    /*task №11*/
+    .tm-nav-item{
+        border-bottom: 1px solid rgb(212, 211, 211);
+    }
+    .tm-main-nav ul li:last-child{
+        border-bottom:none;
+    }
+    /*task №12*/
+    input[type="text"] {
+        color:red;
+    }
+    button[type="submit"] {
+        color:lightblue;
+        float: right;
+        border: 1px solid lightblue;
+        background-color: white;
+        border-radius: 0px;
+    }
+}
+/*task №13*/
+@media (max-width: 1140px), (max-height: 835px) {
+	.tm-sidebar{
+
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin-bottom: 300px;
+		z-index: 10;
+	}
+
+	.tm-main-nav ul li{
+		display: inline;
+        text-align: center;
+        width:25%;
+	}
+
+	.tm-main-nav ul li a{
+		display: inline;
+		width: 50px;
+    }
+    #home{
+        margin-top: 60px;
+    }
+
+	.tm-main-content{
+		margin: auto 0;
+	}
+
+  .tm-main-nav li:hover {
+    background-color: lightgrey;
+  }
+}
